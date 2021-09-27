@@ -8,12 +8,13 @@ import thunk from 'redux-thunk';
 
 import reducers from "./reducers";
 
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
+const createStoreWithMiddleware = applyMiddleware(thunk)(compose((window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore)));
 
 import "./style/main.scss";
 
 import Home from "./components/home";
 import Results from "./components/results";
+import { compose } from "redux";
 
 
 function main() {
