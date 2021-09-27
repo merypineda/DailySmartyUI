@@ -14,7 +14,8 @@ class RecentPosts extends Component {
         const posts = this.props.recentPosts.map((post, index) => {
          if (index < 3) {
                 return (
-                   <Post {...posts} key={index} />
+                   <Post {...post} key={index} />
+
                  )
             }
         })
@@ -30,7 +31,6 @@ class RecentPosts extends Component {
                      <div className="recent-posts-heading">Recent Posts</div>
                      <ul className="recent-posts-posts">
                          {this.renderPosts()}
-
                      </ul>
                  </div>
                  
