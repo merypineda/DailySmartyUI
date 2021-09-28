@@ -5,13 +5,11 @@ import { withRouter } from "react-router-dom";
 
 
 class SearchBar extends Component {
+    
+    handleFormSubmit = function({query}) {
+       this.props.onSubmit(query);
+    }
 
-handleFormSubmit = function({query}) {
-    console.log('trying to handle submit query', query);   
-    //navigate to new route
-
-    this.props.history.push('results');
-}
     renderInput(field) {
         return <input type="text" placeholder="Search DailySmarty" {...field.input} />
     }
