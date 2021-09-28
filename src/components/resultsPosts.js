@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux'
-import * as actions from '../actions';
+// import * as actions from '../actions';
 
 class ResultPosts extends Component {
     render() {
@@ -9,7 +9,7 @@ class ResultPosts extends Component {
             <ul className="result-posts">
                 <div className="results-posts__wrapper">
                     <ul className="results-posts__posts">
-                        Result Go Here9
+                        Result Go Here
 
                     </ul>
                 </div>
