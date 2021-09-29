@@ -16,7 +16,7 @@ export default function(state = INIT_STATE, action) {
                 recentPosts
             }
 
-        // after this point the search goes aways
+        // after this point the search goes away
         case SET_RESULTS_POSTS: 
             const resultsPosts = action.payload;
         return {
