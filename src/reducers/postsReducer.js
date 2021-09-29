@@ -1,7 +1,5 @@
 import {
-    SET_RECENT_POSTS,
-    SET_RESULTS_POSTS
-
+    SET_RECENT_POSTS, SET_RESULTS_POSTS
 } from '../actions/types';
 
 const INIT_STATE = {
@@ -17,13 +15,15 @@ export default function(state = INIT_STATE, action) {
                 ...state, 
                 recentPosts
             }
-        
-        case SET_RESULTS_POSTS:
-            const resultPosts = action.payload;
-            return {
-                ...state,
-                posts: resultPosts
-            }
+
+        // after this point the search goes aways
+        case SET_RESULTS_POSTS: 
+            const resultsPosts = action.payload;
+        return {
+            ...state,
+            resultsPosts
+
+        }
     
         default:
             return state;

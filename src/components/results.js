@@ -10,7 +10,7 @@ import * as actions from '../actions';
 class Results extends Component {
 
     handleSearchBarSubmit(query) {
-        this.props.fetchRecentPosts(query);
+        this.props.fetchPostsWithQuery(query);
         
     }
     render() {
