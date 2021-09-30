@@ -7,7 +7,7 @@ class ResultsPosts extends Component {
 
     renderPosts() {
         const posts = this.props.posts.map((post, index) => {
-            return <Post type="results" key={index} {...post} />
+            return <Post type="result" key={index} {...post} />
         })
         return posts;
      
@@ -18,7 +18,6 @@ class ResultsPosts extends Component {
             <ul className="result-posts">
                 <div className="results-posts__wrapper">
                     <ul className="results-posts__posts">
-                    Result Go Here
                     {this.renderPosts()}
 
                     </ul>
