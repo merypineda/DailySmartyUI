@@ -3,10 +3,16 @@
     width: 66vw;
     display: grid;
     align-content: space-around;
-    justify-items: stretch;    
 
 }
 
 .post-topic {
     margin: 0 4px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    // to get rid of the dots
+    list-style-type: none;
 }
