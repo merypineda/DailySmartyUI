@@ -44,10 +44,13 @@ class Post extends Component {
                 <div className="post-link__box"></div>
                 <div className="post-link__link">
                 <a href={post_link.link_url}>{this.getNameForPostLink(post_link.link_url)}</a>
-
                 </div>
             </div>)
         })
+        if(links == 0) {
+            return <div className="no-content">No Post Link</div>
+        }
+
         return links;
     }
 
